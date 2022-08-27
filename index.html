@@ -40,7 +40,7 @@
       } else if (keyCode === RIGHT_ARROW) {
         snakeVel = createVector(1, 0);
       }
-      if (snakeVel.x === -px || snakeVel.y == -py)
+      if (snake.length > 1 && (snakeVel.x === -px || snakeVel.y == -py))
         snakeVel = createVector(px, py);
       else
         didChange = true;
